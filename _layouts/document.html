@@ -1,57 +1,35 @@
 <!doctype html>
+{% assign page_slug = page.url | split: '/' | last %}
+{% assign document_title = "Foundational Writing Standard" %}
+{% for chapter in site.data.chapters %}
+  {% assign chapter_slug = chapter.file | replace: '.md', '' %}
+  {% if page_slug == chapter_slug %}
+    {% assign document_title = chapter.title %}
+  {% endif %}
+{% endfor %}
 <html lang="{{ site.lang | default: 'en' }}">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ page.title | default: site.description | escape }}">
-  <title>{{ page.title | default: site.title | escape }} · {{ site.title | escape }}</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ document_title | escape }} · {{ site.description | escape }}">
+  <title>{{ document_title | escape }} · {{ site.title | escape }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
 <body class="document-page">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="topbar">
     <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">C</span><span>CORE IDENTIFICATION NODES<small>byLAEV · CIVILIZATIONAL FOUNDATIONS</small></span></a>
-    <nav class="top-nav" aria-label="Main navigation">
-      <a href="{{ '/' | relative_url }}">Overview</a>
-      <a href="{{ '/#documentation' | relative_url }}">Documentation</a>
-      <a href="https://github.com/byLAEV/Core-Identification-Nodes-Civilizational-Foundations-byLAEV">GitHub ↗</a>
-    </nav>
+    <nav class="top-nav" aria-label="Main navigation"><a href="{{ '/' | relative_url }}">Overview</a><a href="{{ '/#documentation' | relative_url }}">Documentation</a><a href="https://github.com/byLAEV/Core-Identification-Nodes-Civilizational-Foundations-byLAEV">GitHub ↗</a></nav>
   </header>
   <div class="reading-shell">
-    <aside class="chapter-sidebar">
-      <a class="back-link" href="{{ '/' | relative_url }}">← Project overview</a>
-      <p class="eyebrow">FOUNDATIONAL DOCUMENTATION</p>
-      <ol>
-        {% for chapter in site.data.chapters %}
-        <li><a {% if page.url contains chapter.file | replace: '.md', '' %}aria-current="page"{% endif %} href="{{ '/docs/' | append: chapter.file | replace: '.md', '/' | relative_url }}"><span>{{ chapter.number }}</span>{{ chapter.title }}</a></li>
-        {% endfor %}
-      </ol>
+    <aside class="chapter-sidebar"><a class="back-link" href="{{ '/' | relative_url }}">← Project overview</a><p class="eyebrow">FOUNDATIONAL DOCUMENTATION</p>
+      <ol>{% for chapter in site.data.chapters %}{% assign chapter_slug = chapter.file | replace: '.md', '' %}<li><a {% if page_slug == chapter_slug %}aria-current="page"{% endif %} href="{{ '/docs/' | append: chapter_slug | append: '/' | relative_url }}"><span>{{ chapter.number }}</span>{{ chapter.title }}</a></li>{% endfor %}</ol>
       <a class="standard-link" href="{{ '/docs/FOUNDATIONAL_WRITING_STANDARD/' | relative_url }}">Foundational Writing Standard</a>
     </aside>
-    <main id="main-content" class="document-content">
-      <div class="document-kicker">CORE IDENTIFICATION NODES · byLAEV</div>
-      <h1>{{ page.title | default: page.name | escape }}</h1>
-      {{ content }}
+    <main id="main-content" class="document-content"><div class="document-kicker">CORE IDENTIFICATION NODES · byLAEV</div><h1>{{ document_title | escape }}</h1>{{ content }}
       <nav class="chapter-pagination" aria-label="Chapter navigation">
-        {% assign current = page.url | split: '/' | last %}
-        {% for chapter in site.data.chapters %}
-          {% assign slug = chapter.file | replace: '.md', '' %}
-          {% if current == slug %}
-            {% assign previous_index = forloop.index0 | minus: 1 %}
-            {% assign next_index = forloop.index0 | plus: 1 %}
-            {% if previous_index >= 0 %}
-              {% assign previous = site.data.chapters[previous_index] %}
-              <a class="page-prev" href="{{ '/docs/' | append: previous.file | replace: '.md', '/' | relative_url }}">← {{ previous.title }}</a>
-            {% endif %}
-            {% if next_index < site.data.chapters.size %}
-              {% assign next = site.data.chapters[next_index] %}
-              <a class="page-next" href="{{ '/docs/' | append: next.file | replace: '.md', '/' | relative_url }}">{{ next.title }} →</a>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
+      {% for chapter in site.data.chapters %}{% assign chapter_slug = chapter.file | replace: '.md', '' %}{% if page_slug == chapter_slug %}{% assign previous_index = forloop.index0 | minus: 1 %}{% assign next_index = forloop.index0 | plus: 1 %}{% if previous_index >= 0 %}{% assign previous = site.data.chapters[previous_index] %}<a href="{{ '/docs/' | append: previous.file | replace: '.md', '/' | relative_url }}">← {{ previous.title }}</a>{% endif %}{% if next_index < site.data.chapters.size %}{% assign next = site.data.chapters[next_index] %}<a class="page-next" href="{{ '/docs/' | append: next.file | replace: '.md', '/' | relative_url }}">{{ next.title }} →</a>{% endif %}{% endif %}{% endfor %}
       </nav>
     </main>
   </div>
   <footer class="site-footer"><span>Core Identification Nodes byLAEV</span><span>Research · Foundations · Development</span></footer>
-</body>
-</html>
+</body></html>
