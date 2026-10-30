@@ -260,6 +260,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 4 — Civilizational Justification](docs/04-civilizational-justification.md)
 - [Chapter 5 — Foundational Philosophy](docs/05-foundational-philosophy.md)
 - [Chapter 6 — Theoretical Foundations](docs/06-theoretical-foundations.md)
+- [Chapter 7 — Conceptual Foundations](docs/07-conceptual-foundations.md)
 
 ## Project Development Principle
 
