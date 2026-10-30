@@ -264,6 +264,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 8 — The Core Equation](docs/08-the-core-equation.md)
 - [Chapter 9 — Civilizational Architecture](docs/09-civilizational-architecture.md)
 - [Chapter 10 — Methodological Foundations](docs/10-methodological-foundations.md)
+- [Chapter 11 — Protocol Architecture](docs/11-protocol-architecture.md)
 
 ## Project Development Principle
 
