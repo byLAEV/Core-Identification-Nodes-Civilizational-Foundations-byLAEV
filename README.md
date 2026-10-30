@@ -262,6 +262,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 6 — Theoretical Foundations](docs/06-theoretical-foundations.md)
 - [Chapter 7 — Conceptual Foundations](docs/07-conceptual-foundations.md)
 - [Chapter 8 — The Core Equation](docs/08-the-core-equation.md)
+- [Chapter 9 — Civilizational Architecture](docs/09-civilizational-architecture.md)
 
 ## Project Development Principle
 
