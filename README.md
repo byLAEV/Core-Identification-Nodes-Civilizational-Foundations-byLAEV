@@ -269,6 +269,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 13 — Technological Implementation](docs/13-technological-implementation.md)
 - [Chapter 14 — Civilizational Implications](docs/14-civilizational-implications.md)
 - [Chapter 15 — Axioms, Principles and Validation](docs/15-axioms-principles-and-validation.md)
+- [Chapter 16 — Research and Development](docs/16-research-and-development.md)
 
 ## Project Development Principle
 
