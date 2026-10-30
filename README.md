@@ -6,6 +6,6 @@ Philosophical, theoretical, conceptual, and methodological foundations exploring
 
 ## Core equation
 
-\[
+$$
 \boxed{H\xrightarrow{P2P}L}
-\]
+$$
