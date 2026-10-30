@@ -278,3 +278,33 @@ The knowledge developed by the project must remain open to verification, justifi
 **Philosophy · Theory · Concepts · Methodology · Protocols · Architecture · Civilizational Evolution**
 
 Core Identification Nodes byLAEV develops its foundations progressively, moving from civilizational reasoning to formal models, methodologies, protocols, and technological implementation.
+
+
+---
+
+## Digital Publication · GitHub Pages
+
+The project also includes a web publication designed to make the research architecture accessible as a navigable academic-style digital document.
+
+**GitHub Pages URL (after Pages deployment is enabled):**
+
+https://bylaev.github.io/Core-Identification-Nodes-Civilizational-Foundations-byLAEV/
+
+The website is generated from the repository's original Markdown chapters. The Markdown files remain the canonical source of the research; the website is their presentation layer.
+
+### Repository structure
+
+- `index.html` — project landing page.
+- `_config.yml` — Jekyll and GitHub Pages configuration.
+- `_data/chapters.yml` — chapter navigation and descriptions.
+- `_layouts/document.html` — shared reading layout for documents.
+- `assets/css/site.css` — responsive visual system.
+- `assets/js/site.js` — mobile navigation behavior.
+- `docs/` — foundational writing standard and research chapters.
+- `.github/workflows/pages.yml` — automated Pages build and deployment.
+
+### Publishing
+
+The workflow builds and deploys the site on pushes to `main`. In the repository's GitHub settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. The first deployment can then be monitored under the Actions tab.
+
+The public website becomes available after GitHub completes the deployment. The site URL above is the expected project URL, not a claim that deployment has already completed.
