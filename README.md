@@ -258,6 +258,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 2 — Civilizational Premise](docs/02-civilizational-premise.md)
 - [Chapter 3 — The Fundamental Problem](docs/03-the-fundamental-problem.md)
 - [Chapter 4 — Civilizational Justification](docs/04-civilizational-justification.md)
+- [Chapter 5 — Foundational Philosophy](docs/05-foundational-philosophy.md)
 
 ## Project Development Principle
 
