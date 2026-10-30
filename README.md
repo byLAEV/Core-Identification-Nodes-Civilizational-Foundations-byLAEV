@@ -270,6 +270,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 14 — Civilizational Implications](docs/14-civilizational-implications.md)
 - [Chapter 15 — Axioms, Principles and Validation](docs/15-axioms-principles-and-validation.md)
 - [Chapter 16 — Research and Development](docs/16-research-and-development.md)
+- [Chapter 17 — Universal Scope](docs/17-universal-scope.md)
 
 ## Project Development Principle
 
