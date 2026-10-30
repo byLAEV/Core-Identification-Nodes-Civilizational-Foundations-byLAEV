@@ -1,0 +1,21 @@
+title: "Core Identification Nodes — Civilizational Foundations byLAEV"
+description: "Research and development foundations for a decentralized, interoperable and interconnected civilizational ecosystem."
+url: "https://bylaev.github.io"
+baseurl: "/Core-Identification-Nodes-Civilizational-Foundations-byLAEV"
+lang: en
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+defaults:
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "document"
