@@ -256,6 +256,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Foundational Writing Standard](docs/FOUNDATIONAL_WRITING_STANDARD.md)
 - [Chapter 1 — Introduction](docs/01-introduction.md)
 - [Chapter 2 — Civilizational Premise](docs/02-civilizational-premise.md)
+- [Chapter 3 — The Fundamental Problem](docs/03-the-fundamental-problem.md)
 
 ## Project Development Principle
 
