@@ -261,6 +261,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 5 — Foundational Philosophy](docs/05-foundational-philosophy.md)
 - [Chapter 6 — Theoretical Foundations](docs/06-theoretical-foundations.md)
 - [Chapter 7 — Conceptual Foundations](docs/07-conceptual-foundations.md)
+- [Chapter 8 — The Core Equation](docs/08-the-core-equation.md)
 
 ## Project Development Principle
 
