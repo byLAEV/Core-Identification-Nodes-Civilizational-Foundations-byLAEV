@@ -265,6 +265,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 9 — Civilizational Architecture](docs/09-civilizational-architecture.md)
 - [Chapter 10 — Methodological Foundations](docs/10-methodological-foundations.md)
 - [Chapter 11 — Protocol Architecture](docs/11-protocol-architecture.md)
+- [Chapter 12 — Governance](docs/12-governance.md)
 
 ## Project Development Principle
 
