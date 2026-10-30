@@ -267,6 +267,7 @@ The knowledge developed by the project must remain open to verification, justifi
 - [Chapter 11 — Protocol Architecture](docs/11-protocol-architecture.md)
 - [Chapter 12 — Governance](docs/12-governance.md)
 - [Chapter 13 — Technological Implementation](docs/13-technological-implementation.md)
+- [Chapter 14 — Civilizational Implications](docs/14-civilizational-implications.md)
 
 ## Project Development Principle
 
